@@ -54,6 +54,9 @@
         },
         ".source.pug": {
           "default": false
+        },
+        ".text.plain.null-grammar": {
+          "default": false
         }
       },
       "description": "Automatically remove whitespace characters at ends of lines when the buffer is saved. To disable/enable for a certain language, use [syntax-scoped properties](https://github.com/nrser/whitespace#readme) in your `config.cson`."
@@ -81,6 +84,11 @@
     "ensureSingleTrailingNewline": {
       "type": "boolean",
       "default": true,
+      "scopes": {
+        ".text.plain.null-grammar": {
+          "default": false
+        }
+      },
       "description": "If the buffer doesn't end with a newline character when it's saved, then append one. If it ends with more than one newline, remove all but one. To disable/enable for a certain language, use [syntax-scoped properties](https://github.com/nrser/whitespace#readme) in your `config.cson`."
     }
   }
