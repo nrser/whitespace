@@ -55,7 +55,7 @@
         ".source.pug": {
           "default": false
         },
-        ".text.plain.null-grammar": {
+        ".text": {
           "default": false
         }
       },
@@ -85,7 +85,7 @@
       "type": "boolean",
       "default": true,
       "scopes": {
-        ".text.plain.null-grammar": {
+        ".text": {
           "default": false
         }
       },
